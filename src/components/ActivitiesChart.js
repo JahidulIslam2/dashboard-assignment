@@ -80,11 +80,14 @@ const ActivitiesChart = () => {
 
 
     return (
-        <div className='bg-tertiary' style={{ maxWidth: '467px', maxHeight: '420px' }}>
+        <div className='bg-tertiary rounded-lg ' style={{ maxWidth: '467px', maxHeight: '620px' }}>
             <Line
                 type="line"
                 data={data}
                 options={options}
+                width={100}
+                height={90}
+
             />
         </div>
     );

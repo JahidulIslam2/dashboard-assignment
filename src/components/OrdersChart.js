@@ -35,11 +35,7 @@ const OrdersChart = () => {
 
     const options = {
 
-        elements: {
-            rectangle: {
-                borderRadius: 20,
-            },
-        },
+
 
         plugins: {
             title: {
@@ -67,22 +63,19 @@ const OrdersChart = () => {
 
         },
 
-        elements: {
-            point: {
-                radius: 5,
-            },
-        },
         responsive: true,
         maintainAspectRatio: true,
     };
 
 
     return (
-        <div className='bg-tertiary' style={{ maxWidth: '440px', maxHeight: '315px' }}>
+        <div className='bg-blurple rounded-lg' style={{ maxWidth: '440px', maxHeight: '315px' }}>
             <Bar
                 type="bar"
                 data={data}
                 options={options}
+                width={110}
+                height={95}
             />
         </div>
     );

@@ -38,32 +38,33 @@ const Dashboard = () => {
 
                         <div className="flex-grow mt-[73px]">
                             <ul className="flex flex-col py-4 space-y-1 text-white">
-                                <li className=" ml-12 py-3 text-gray-500 hover: text-white hover:bg-gray-700">
-                                    <a href="#g" className='flex gap-[10px] font-semibold'>
+
+                                <li className=" ml-12 py-3  ">
+                                    <a href="##" className='flex gap-[10px] font-semibold  hover:bg-blue hover:rounded-full hover:p-2'>
                                         <SlBasketLoaded className='h-[22px] w-[22px]' />
                                         Orders
                                     </a>
 
                                 </li>
-                                <li className=" ml-12 py-3 text-gray-500 hover:text-white hover:bg-gray-700">
-                                    <a href="#" className='flex gap-[10px] font-semibold'>
+                                <li className=" ml-12 py-3 ">
+                                    <a href="##" className='flex gap-[10px] font-semibold  hover:bg-blue hover:rounded-full hover:p-2 '>
                                         <MdOutlinePeopleAlt className='h-[22px] w-[22px]' />
                                         Customers
                                     </a>
                                 </li>
-                                <li className=" ml-12 py-3 text-gray-500 hover:text-white hover:bg-gray-700">
-                                    <a href="#" className='flex gap-[10px] font-semibold'>
+                                <li className=" ml-12 py-3  ">
+                                    <a href="##" className='flex gap-[10px] font-semibold hover:bg-blue hover:rounded-full hover:p-2'>
                                         <FaBoxOpen className='h-[22px] w-[22px]' />
                                         Products
                                     </a>
                                 </li>
-                                <li className=" ml-12 py-3 text-gray-500 hover:text-white hover:bg-gray-700">
-                                    <a href="#" className='flex gap-[10px] font-semibold'>
+                                <li className=" ml-12 py-3 text-gray-500">
+                                    <a href="##" className='flex gap-[10px] font-semibold  hover:bg-blue hover:rounded-full hover:p-2'>
                                         <FaShoppingBag className='h-[22px] w-[22px]' />
                                         Marketing</a>
                                 </li>
-                                <li className=" ml-12 py-3 text-gray-500 hover:text-white hover:bg-gray-700">
-                                    <a href="#" className='flex gap-[10px] font-semibold'>
+                                <li className=" ml-12 py-3 text-gray-500 ">
+                                    <a href="##" className='flex gap-[10px] font-semibold hover:bg-blue hover:rounded-full hover:p-2'>
                                         <MdOutlineDiscount className='h-[22px] w-[22px]' />
                                         Discount
                                     </a>
@@ -79,7 +80,7 @@ const Dashboard = () => {
                         </div>
                     </div>
                 </div>
-                {/* button */}
+                {/* button down*/}
                 <div className='container ml-[45px] mt-11 mb-[52px]  flex gap-4'>
                     <button className='bg-secondary h-[59px] w-[59px] flex items-center justify-center text-center hover:bg-tertiary  font-bold  rounded-full'>
                         <FiSettings className='h-6 w-6  text-primary' />
@@ -92,7 +93,7 @@ const Dashboard = () => {
             {/* body */}
             <div className="flex-grow bg-gray-100">
 
-                {/* Searchbar */}
+                {/* Search bar */}
                 <div>
                     <div class='max-w-[432px] h-[60px] mx-auto border mt-8 ml-[69px] text-white'>
                         <div class="relative flex items-center w-full h-12 rounded-full focus-within:shadow-lg  overflow-hidden bg-tertiary">
@@ -113,7 +114,7 @@ const Dashboard = () => {
                 </div>
 
                 <div className="pl-[70px] pt-8">
-
+                    {/* Card */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 w-[911px] h-28">
 
                         <div className="bg-primary text-white rounded-lg shadow-md p-6 border ">
@@ -159,15 +160,16 @@ const Dashboard = () => {
                             </div>
                         </div>
                     </div>
-                    <div className=' flex mt-9 col-2 gap-6'>
+                    <div className='grid grid-cols-2 mt-9  gap-6 '>
                         {/* Activities chart */}
-                        <div className=' border'>
+                        <div>
 
                             <ActivitiesChart />
                         </div>
-                        <div className='bg-primary m-0'>
+                        <div>
                             <OrdersChart />
                         </div>
+
                     </div>
                 </div>
             </div>
